@@ -38,6 +38,18 @@ DEV_PORTION_DIR   = os.path.join(CORPUS_PATH,"speech","dev")
 
 REPO_DATA_DIR=os.path.join("HF_DATA_REPO","data")
 
+CACHE_DIR=os.path.join("HF_DATA_REPO","CACHE")
+
+########################################################################
+#Create important directories
+if not os.path.exists(REPO_DATA_DIR):
+	os.mkdir(REPO_DATA_DIR)
+#ENDIF
+
+if not os.path.exists(CACHE_DIR):
+	os.mkdir(CACHE_DIR)
+#ENDIF
+
 ########################################################################
 #Global Functions
 def load_trans(trans_path):
