@@ -26,7 +26,9 @@ import os
 ########################################################################
 #Important variables
 
-CORPUS_PATH="Example_Corpus"
+os.chdir("../")
+
+CORPUS_PATH="Load_Custom_Data_in_HF/Example_Corpus"
 
 TRAIN_TRANS = os.path.join(CORPUS_PATH,"transcriptions","train.trans")
 TEST_TRANS  = os.path.join(CORPUS_PATH,"transcriptions","test.trans")
@@ -36,9 +38,9 @@ TRAIN_PORTION_DIR = os.path.join(CORPUS_PATH,"speech","train")
 TEST_PORTION_DIR  = os.path.join(CORPUS_PATH,"speech","test")
 DEV_PORTION_DIR   = os.path.join(CORPUS_PATH,"speech","dev")
 
-REPO_DATA_DIR=os.path.join("HF_DATA_REPO","data")
+REPO_DATA_DIR=os.path.join("Load_Custom_Data_in_HF/HF_DATA_REPO","data")
 
-CACHE_DIR=os.path.join("HF_DATA_REPO","CACHE")
+CACHE_DIR=os.path.join("Load_Custom_Data_in_HF/HF_DATA_REPO","CACHE")
 
 ########################################################################
 #Create important directories
@@ -83,6 +85,7 @@ def find_audios(PORTION_DIR):
 				audio_path='.'.join(lista_path)
 				file_id=os.path.basename(audio_path)
 				HASH_PATHS[file_id]=path_to_file
+				print(path_to_file)
 			#ENDIF
 		#ENDFOR
 	#ENDFOR
