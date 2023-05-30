@@ -85,7 +85,6 @@ def find_audios(PORTION_DIR):
 				audio_path='.'.join(lista_path)
 				file_id=os.path.basename(audio_path)
 				HASH_PATHS[file_id]=path_to_file
-				print(path_to_file)
 			#ENDIF
 		#ENDFOR
 	#ENDFOR
