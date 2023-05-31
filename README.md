@@ -63,6 +63,7 @@ What you have to do is to manually remove the audio files that are in the folder
 Now you will have to inspect the files "Example_Corpus/transcriptions/train.trans" and "Example_Corpus/transcriptions/test.trans". Notice that they come in this format:
 
 **FSAG0_SI693 he who does not love abides in death**
+
 **MRRE0_SX344 i know i didn't meet her early enough**
 
 In other words, the format is:
